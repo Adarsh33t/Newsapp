@@ -2,7 +2,7 @@
 
 NewsHub is a Django-powered news aggregator application that allows users to customize their news feed based on their interests and preferences. It collects news articles from multiple sources through API calls and presents them in a user-friendly interface.
 
-![NewsHub Screenshot](news_hub_screenshot.png)
+
 
 ## Table of Contents
 
@@ -48,35 +48,64 @@ Before you begin, ensure you have met the following requirements:
 - Pip package manager installed.
 - A modern web browser to access the app.
 
-### Installation
+## Installation
+
+Follow these steps to set up the project locally:
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/newshub.git
-   cd newshub
+   git clone https://github.com/yourusername/skin-disease-prediction.git
+   ```
 
-1.Navigate to the project directory:
+2. Create a virtual environment:
 
-cd caloriefy
+   ```bash
+   python -m venv venv
+   ```
 
-2.Create a virtual environment python 
+3. Activate the virtual environment:
 
--m venv venv
+   - On Windows:
 
-3.Activate the virtual environment:
+     ```bash
+     venv\Scripts\activate
+     ```
 
-venv\Scripts\activate
+   - On macOS and Linux:
 
-4.Install project dependencies: 
+     ```bash
+     source venv/bin/activate
+     ```
 
-pip install -r requirements.txt
+4. Install the required packages:
 
-5.Configure your database settings in the settings.py file
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-6.Apply database migrations: 
+5. Configure the database settings in `settings.py` to connect to your MySQL database.
 
-python manage.py migrate
+6. Run migrations:
+
+   ```bash
+   python manage.py migrate
+   ```
+
+7. Create a superuser for admin access:
+
+   ```bash
+   python manage.py createsuperuser
+   ```
+
+8. Start the development server:
+
+   ```bash
+   python manage.py runserver
+   ```
+
+9. Access the application in your web browser at `http://localhost:8000`.
+
 
 7.Start the development server: 
 
